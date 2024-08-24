@@ -1,0 +1,12 @@
+<script>
+   var a = Number(lines.shift())
+   var cont = 0
+
+   for (let i = 0; i < 1000; i++) {
+      console.log(`N[${i}] = ${cont}`)
+      cont++
+      if (cont === a) {
+         cont = 0
+      }
+   }
+</script>

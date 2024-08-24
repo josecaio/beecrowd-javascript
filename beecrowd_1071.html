@@ -1,0 +1,16 @@
+<script>
+    let x = parseInt(lines.shift('nx'))
+    let y = parseInt(lines.shift('ny'))
+
+    let menor = Math.min(x, y)
+    let maior = Math.max(x, y)
+
+    let somaImpares = 0
+
+    for (let i = menor; i < maior; i++) {
+        if (i % 2 !== 0) {
+            somaImpares += i
+        }
+    }
+    console.log(somaImpares)
+</script>

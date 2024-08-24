@@ -1,0 +1,16 @@
+<script>
+var soma = 0
+var cont = 0
+
+while (true) {
+   var idade = Number(lines.shift())
+   if (idade > 0 || idade === 0) {
+    cont++
+    soma+=idade
+   } else {
+    var media = soma/cont
+    console.log(media.toFixed(2))
+    break;
+   }
+}
+</script>

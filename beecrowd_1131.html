@@ -1,0 +1,41 @@
+<script>
+  var grenais = 0
+  var interV = 0
+  var gremioV = 0
+  var empates = 0
+
+  var novoCalculo = 1
+
+  while (novoCalculo === 1) {
+    let n = lines.shift().split(' ').map(Number)
+    let inter = n[0]
+    let gremio = n[1]
+
+    console.log(`Novo grenal (1-sim 2-nao)`) 
+
+    grenais++
+    if (gremio > inter) {
+      gremioV++
+    } else if (gremio < inter) {
+      interV++
+    } else {
+      empates++
+    }
+   
+
+    novoCalculo = Number(lines.shift())
+    if (novoCalculo === 2) {
+      console.log(`${grenais} grenais`)
+      console.log(`Inter:${interV}`)
+      console.log(`Gremio:${gremioV}`)
+      console.log(`Empates:${empates}`)
+      if (interV > gremioV) {
+        console.log(`Inter venceu mais`)
+      } else if (interV < gremioV) {
+        console.log(`Gremio venceu mais`)
+      } else {
+        console.log(`Nao houve vencedor`)
+      }
+    }
+  }
+</script>

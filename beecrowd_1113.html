@@ -1,0 +1,15 @@
+<script>
+    while (true) {
+        let valor = lines.shift().split(' ').map(Number)
+        let x = valor[0]
+        let y = valor[1]
+        if (x === y) {
+            break;
+        }
+        if (x > y) {
+            console.log('Crescente')
+        } else {
+            console.log('Decrescente')
+        }
+    }
+</script>

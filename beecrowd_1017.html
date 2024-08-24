@@ -1,0 +1,17 @@
+<meta charset = "UTF-8">
+<script>
+
+    var l, vm, thrs, d;
+
+    function prompt (frase){
+        return lines.shift(frase);
+    }
+
+    thrs = Number(prompt("Informe o tempo gasto na viagem (em horas)")); 
+    vm = Number(prompt("Informe a velocidade média do automóvel (em km/h)"));
+    d = thrs*vm;
+    l = d/12;
+
+    console.log ( l.toFixed(3));    
+
+</script>

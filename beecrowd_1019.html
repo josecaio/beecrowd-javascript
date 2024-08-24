@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    var n, hrs, min, seg;
+
+    n=parseInt(lines.shift());
+
+    hrs=parseInt(n/3600); //parseInt de 0.9 é 0 e de 1.9 é 1...
+    n=parseInt(n%3600);
+
+    min=parseInt(n/60);
+    n=parseInt(n%60);
+
+    seg=n;
+
+    console.log(hrs+":"+min+":"+seg);
+
+</script>

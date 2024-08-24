@@ -1,0 +1,21 @@
+<script>
+    let valoresPares = 0, valoresImpares = 0, valoresPositivos = 0, valoresNegativos = 0;
+
+    for (let cont = 1; cont <= 5; cont++) {
+        n = parseFloat(lines.shift('informe o n' + cont))
+        if (n > 0) {
+            valoresPositivos++
+        } else if (n < 0){
+            valoresNegativos++
+        }
+        if (n % 2 === 0) {
+            valoresPares++
+        } else {
+            valoresImpares++
+        }
+    }
+    console.log(valoresPares + ' valor(es) par(es)')
+    console.log(valoresImpares + ' valor(es) impar(es)')
+    console.log(valoresPositivos + ' valor(es) positivo(s)')
+    console.log(valoresNegativos + ' valor(es) negativo(s)')
+</script>

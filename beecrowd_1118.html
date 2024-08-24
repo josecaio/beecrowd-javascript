@@ -1,0 +1,24 @@
+<script>
+  var novoCalculo = 1
+    while (novoCalculo === 1) {
+      var notas = []
+      var notasValidas = 0
+      while (notasValidas < 2) {
+        var nota = Number(lines.shift('nota'))
+        if (nota < 0 || nota > 10) {
+          console.log('nota invalida')
+        } else {
+          notas.push(nota)
+          notasValidas++
+        }
+      }
+      var media = (notas[0] + nota[1]) / 2
+      console.log(`media = ${media.toFixed(2)}`)
+      console.log('novo calculo (1-sim 2-nao)')
+      novoCalculo = Number(prompt(""));
+      while (novoCalculo !== 1 && novoCalculo !== 2) {
+        console.log("novo calculo (1-sim 2-nao)");
+        novoCalculo = parseInt(prompt(""));
+      }
+    }
+</script>

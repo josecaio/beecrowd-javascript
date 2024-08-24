@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    
+var raio, volume;
+
+raio = parseFloat(lines.shift());
+
+//Ao utilizar a fórmula, procure usar (4/3.0) ou (4.0/3), pois algumas linguagens (dentre elas o C++), assumem que o resultado da divisão entre dois inteiros é outro inteiro
+volume = (4.0/3) * 3.14159 * Math.pow(raio, 3);
+
+console.log("VOLUME = " + volume.toFixed(3));
+
+</script>
